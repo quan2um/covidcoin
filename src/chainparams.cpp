@@ -246,11 +246,11 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-        vSeeds.push_back(CDNSSeedData("146.71.79.5", "146.71.79.5"));
-        vSeeds.push_back(CDNSSeedData("209.182.216.180", "209.182.216.180"));
+        vSeeds.push_back(CDNSSeedData("146.71.79.5", "146.71.77.224"));
+        vSeeds.push_back(CDNSSeedData("209.182.216.180", "45.61.49.139"));
         vSeeds.push_back(CDNSSeedData("146.71.77.224", "146.71.77.224"));
-        vSeeds.push_back(CDNSSeedData("45.61.49.139", "45.61.49.139"));
-        vSeeds.push_back(CDNSSeedData("194.37.80.229", "194.37.80.229"));
+        vSeeds.push_back(CDNSSeedData("45.61.49.139", "209.182.216.180"));
+        vSeeds.push_back(CDNSSeedData("194.37.80.229", "209.97.190.60"));
 
         fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
