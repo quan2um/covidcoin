@@ -53,13 +53,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (  1, uint256("00000f9822b4c421d6b6fc911b0c678b5920c63896699f2e2a033be7ab894532"))
-    ( 99, uint256("000000175cda0cd59cdd9f9c5edf3ae422787566073c23c18e59d26cfe1d83f1"))
-    (149, uint256("0000001dbf1509f80a04dc61b0ad13368bf29e9e504ed9753e227f6a79765cec"));
+    (  1, uint256("0000075a7856bd8dd760d960b306344de0995cd0fbb51f15abfa4f51936a76ac"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1587474251, // * UNIX timestamp of last checkpoint block
-    153,    // * total number of transactions between genesis and last checkpoint
+    1614964493, // * UNIX timestamp of last checkpoint block
+    2,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -143,9 +141,9 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xd0;
-        pchMessageStart[1] = 0xf4;
-        pchMessageStart[2] = 0x8d;
+        pchMessageStart[0] = 0xa0;
+        pchMessageStart[1] = 0xd4;
+        pchMessageStart[2] = 0xed;
         pchMessageStart[3] = 0x89;
         vAlertPubKey = ParseHex("0000098d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50");
         nDefaultPort = 51472;
